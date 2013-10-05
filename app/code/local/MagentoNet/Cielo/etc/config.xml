@@ -84,7 +84,7 @@
         <payment>
             <cielo>
                 <model>MagentoNet_Cielo_Model_Payment</model>
-                <active>0</active>
+                <active>1</active>
                 <title>Pagamento por cartão de crédito</title>
             </cielo>
         </payment>
