@@ -14,7 +14,7 @@
  * @author     MagentoNet <contato@magento.net.br>
  */
 
-class MagentoNet_Cielo_Model_Payment extends Mage_Payment_Model_Method_Abstract
+class MagentoNet_Cielo_Model_Payment extends Mage_Payment_Model_Method_Cc
 {
 
     protected $_code  = 'cielo';
