@@ -146,7 +146,7 @@ class MagentoNet_Cielo_Model_Payment extends Mage_Payment_Model_Method_Cc
         if (!$this->canCapture()) {
             Mage::throwException(Mage::helper('payment')->__('Capture action is not available.'));
         }
-        echo "opa"; exit();
+        //echo "opa"; exit();
         return $this;
     }
 
