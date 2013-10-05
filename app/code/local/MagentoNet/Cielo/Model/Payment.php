@@ -40,7 +40,7 @@ class MagentoNet_Cielo_Model_Payment extends Mage_Payment_Model_Method_Cc
     //Can refund online?
     //==================
     protected $_canRefund               = false;
-    protected $_canRefundInvoicePartial     = false;
+    protected $_canRefundInvoicePartial     = true;
 
     //Can void transactions online?
     //=============================
