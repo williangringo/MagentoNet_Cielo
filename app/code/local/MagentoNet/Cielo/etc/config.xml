@@ -80,4 +80,13 @@
 	  </customerattribute1380928223_read>
 	</resources>
   </global>
+    <default>
+        <payment>
+            <cielo>
+                <model>MagentoNet_Cielo_Model_Payment</model>
+                <active>0</active>
+                <title>Pagamento por cartão de crédito</title>
+            </cielo>
+        </payment>
+    </default>
 </config> 
