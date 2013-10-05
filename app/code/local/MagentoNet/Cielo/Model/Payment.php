@@ -62,7 +62,8 @@ class MagentoNet_Cielo_Model_Payment extends Mage_Payment_Model_Method_Cc
     //========================================================
     protected $_canSaveCc = false;
 
-    //protected $_isInitializeNeeded      = false;
+    protected $_isInitializeNeeded      = false;
+    protected $_canReviewPayment = true; // changed PJS to true
 
 
 
