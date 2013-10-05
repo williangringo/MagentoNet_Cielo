@@ -18,8 +18,8 @@ class MagentoNet_Cielo_Model_Payment extends Mage_Payment_Model_Method_Abstract
 {
 
     protected $_code  = 'cielo';
-    protected $_formBlockType = 'cielo/form';
-    protected $_infoBlockType = 'cielo/info';
+    //protected $_formBlockType = 'cielo/form';
+    //protected $_infoBlockType = 'cielo/info';
 
     //Is this payment method a gateway (online auth/charge) ?
     //=======================================================
