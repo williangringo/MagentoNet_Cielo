@@ -132,6 +132,30 @@ class MagentoNet_Cielo_Model_Payment extends Mage_Payment_Model_Method_Abstract
     }
 
 
+
+
+    /**
+     * Refund specified amount for payment
+     *
+     * @param Varien_Object $payment
+     * @param float $amount
+     *
+     * @return Mage_Payment_Model_Abstract
+     */
+    public function refund(Varien_Object $payment, $amount)
+    {
+
+        echo "devolver"; exit();
+
+        if (!$this->canRefund()) {
+            Mage::throwException(Mage::helper('payment')->__('Refund action is not available.'));
+        }
+
+
+        return $this;
+    }
+
+
    /* public function getOrderPlaceRedirectUrl($orderId = 0)
     {
         $params = array();
