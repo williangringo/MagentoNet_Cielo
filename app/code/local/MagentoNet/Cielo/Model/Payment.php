@@ -175,7 +175,7 @@ class MagentoNet_Cielo_Model_Payment extends Mage_Payment_Model_Method_Abstract
     public function refund(Varien_Object $payment, $amount)
     {
 
-        echo "devolver"; exit();
+        //echo "devolver"; exit();
 
         if (!$this->canRefund()) {
             Mage::throwException(Mage::helper('payment')->__('Refund action is not available.'));
