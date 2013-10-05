@@ -39,8 +39,9 @@ class MagentoNet_Cielo_Model_Payment extends Mage_Payment_Model_Method_Cc
 
     //Can refund online?
     //==================
-    protected $_canRefund               = false;
+
     protected $_canRefundInvoicePartial     = true;
+    protected $_canRefund               = true;
 
     //Can void transactions online?
     //=============================
@@ -172,6 +173,7 @@ class MagentoNet_Cielo_Model_Payment extends Mage_Payment_Model_Method_Cc
     {
 
         //echo "devolver"; exit();
+        echo "sai"; exit();
 
         if (!$this->canRefund()) {
             Mage::throwException(Mage::helper('payment')->__('Refund action is not available.'));
