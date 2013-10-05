@@ -134,6 +134,25 @@ class MagentoNet_Cielo_Model_Payment extends Mage_Payment_Model_Method_Abstract
 
 
     /**
+     * Capture payment abstract method
+     *
+     * @param Varien_Object $payment
+     * @param float $amount
+     *
+     * @return Mage_Payment_Model_Abstract
+     */
+    public function capture(Varien_Object $payment, $amount)
+    {
+        if (!$this->canCapture()) {
+            Mage::throwException(Mage::helper('payment')->__('Capture action is not available.'));
+        }
+
+        return $this;
+    }
+
+
+
+    /**
      * Set transaction ID into creditmemo for informational purposes
      * @param Mage_Sales_Model_Order_Creditmemo $creditmemo
      * @param Mage_Sales_Model_Order_Payment $payment
