@@ -177,6 +177,16 @@ class MagentoNet_Cielo_Model_Payment extends Mage_Payment_Model_Method_Abstract
     }
 
 
+
+    /**
+     * called if voiding a payment
+     */
+    public function void (Varien_Object $payment)
+    {
+        return $this;
+    }
+
+
    /* public function getOrderPlaceRedirectUrl($orderId = 0)
     {
         $params = array();
