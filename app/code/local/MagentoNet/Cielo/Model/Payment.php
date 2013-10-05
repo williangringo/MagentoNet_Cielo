@@ -128,8 +128,8 @@ class MagentoNet_Cielo_Model_Payment extends Mage_Payment_Model_Method_Abstract
        // if (!$this->canAuthorize()) {
            // Mage::throwException(Mage::helper('payment')->__('Authorize action is not available.'));
         //}
-        echo "Erro"; exit();
-        //return $this;
+        //echo "Erro"; exit();
+        return $this;
     }
 
 
