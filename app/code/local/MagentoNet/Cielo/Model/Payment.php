@@ -35,17 +35,17 @@ class MagentoNet_Cielo_Model_Payment extends Mage_Payment_Model_Method_Cc
 
     //Can capture partial amounts online?
     //===================================
-    protected $_canCapturePartial       = true;
+    protected $_canCapturePartial       = false;
 
     //Can refund online?
     //==================
 
-    protected $_canRefundInvoicePartial     = false;
-    protected $_canRefund               = true;
+    protected $_canRefundInvoicePartial     = false; //isso só funciona no magento EE
+    protected $_canRefund                   = true; //o estorno online somente está disponível no magento EE, porém ainda é possivel fazer o estorno para controle no admin
 
     //Can void transactions online?
     //=============================
-    protected $_canVoid                 = true;
+    protected $_canVoid                 = true;     //cancelar a transação antes de capturar
 
     //Can use this payment method in administration panel?
     //====================================================
@@ -164,19 +164,17 @@ class MagentoNet_Cielo_Model_Payment extends Mage_Payment_Model_Method_Cc
 
 
 
-    /**
+    /**===================================
      * Refund specified amount for payment
+     * ISSO SÓ FUNCIONA NO MAGENTO EE, POR ISSO NÃO FOI IMPLEMENTADO
      *
      * @param Varien_Object $payment
      * @param float $amount
      *
      * @return Mage_Payment_Model_Abstract
-     */
-    public function refund(Varien_Object $payment, $amount)
+     ====================================*/
+   /* public function refund(Varien_Object $payment, $amount)
     {
-
-        //echo "devolver"; exit();
-        echo "sai"; exit();
 
         if (!$this->canRefund()) {
             Mage::throwException(Mage::helper('payment')->__('Refund action is not available.'));
@@ -184,7 +182,7 @@ class MagentoNet_Cielo_Model_Payment extends Mage_Payment_Model_Method_Cc
 
 
         return $this;
-    }
+    } */
 
 
 
