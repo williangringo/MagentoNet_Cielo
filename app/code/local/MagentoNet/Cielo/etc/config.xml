@@ -85,6 +85,7 @@
             <cielo>
                 <model>MagentoNet_Cielo_Model_Payment</model>
                 <active>1</active>
+                <payment_action>authorize</payment_action>
                 <title>Pagamento por cartão de crédito</title>
             </cielo>
         </payment>
