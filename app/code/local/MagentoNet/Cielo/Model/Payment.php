@@ -136,6 +136,7 @@ class MagentoNet_Cielo_Model_Payment extends Mage_Payment_Model_Method_Cc
         //}
         //echo "Erro"; exit();
         //var_dump($this->canRefund()); exit();
+        var_dump($payment->getIsTransactionApproved()); exit();
         return $this;
     }
 
