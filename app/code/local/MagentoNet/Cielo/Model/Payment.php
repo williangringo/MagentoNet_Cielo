@@ -35,7 +35,7 @@ class MagentoNet_Cielo_Model_Payment extends Mage_Payment_Model_Method_Cc
 
     //Can capture partial amounts online?
     //===================================
-    protected $_canCapturePartial       = false;
+    protected $_canCapturePartial       = true;
 
     //Can refund online?
     //==================
