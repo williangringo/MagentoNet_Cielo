@@ -61,6 +61,8 @@ class MagentoNet_Payment_Model_Payment extends Mage_Payment_Model_Method_Abstrac
     //========================================================
     protected $_canSaveCc = false;
 
+    protected $_isInitializeNeeded      = false;
+
 
 
 
@@ -72,7 +74,7 @@ class MagentoNet_Payment_Model_Payment extends Mage_Payment_Model_Method_Abstrac
      ======================================*/
     public function assignData($data)
     {
-        if (!($data instanceof Varien_Object)) {
+       /* if (!($data instanceof Varien_Object)) {
             $data = new Varien_Object($data);
         }
         $info = $this->getInfoInstance();
@@ -90,7 +92,7 @@ class MagentoNet_Payment_Model_Payment extends Mage_Payment_Model_Method_Abstrac
             ->setCcSsStartYear($data->getCcSsStartYear())
             ->setCcNumberEnc($info->encrypt($data->getCcNumber())) //criptografa o numero do cartão
             ->setCcCidEnc($info->encrypt($data->getCcCid())) //criptografa o código de segurança do cartão
-        ;
+        ; */
         return $this;
     }
 
