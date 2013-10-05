@@ -39,7 +39,7 @@ class MagentoNet_Cielo_Model_Payment extends Mage_Payment_Model_Method_Abstract
 
     //Can refund online?
     //==================
-    protected $_canRefund               = false;
+    protected $_canRefund               = true;
 
     //Can void transactions online?
     //=============================
