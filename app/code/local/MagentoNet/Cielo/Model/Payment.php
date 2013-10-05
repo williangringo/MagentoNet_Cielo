@@ -42,6 +42,7 @@ class MagentoNet_Cielo_Model_Payment extends Mage_Payment_Model_Method_Cc
     protected $_canRefund               = true;
     protected $_canRefundInvoicePartial     = true;
 
+
     //Can void transactions online?
     //=============================
     protected $_canVoid                 = true;
@@ -129,6 +130,7 @@ class MagentoNet_Cielo_Model_Payment extends Mage_Payment_Model_Method_Cc
            // Mage::throwException(Mage::helper('payment')->__('Authorize action is not available.'));
         //}
         //echo "Erro"; exit();
+        var_dump($this->canRefund()); exit();
         return $this;
     }
 
