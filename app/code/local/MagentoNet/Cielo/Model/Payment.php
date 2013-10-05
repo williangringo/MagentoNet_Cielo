@@ -14,7 +14,7 @@
  * @author     MagentoNet <contato@magento.net.br>
  */
 
-class MagentoNet_Cielo_Model_Payment extends Mage_Payment_Model_Method_Cc
+class MagentoNet_Cielo_Model_Payment extends Mage_Paygate_Model_Authorizenet
 {
 
     protected $_code  = 'cielo';
@@ -152,17 +152,7 @@ class MagentoNet_Cielo_Model_Payment extends Mage_Payment_Model_Method_Cc
 
 
 
-    /**
-     * Set transaction ID into creditmemo for informational purposes
-     * @param Mage_Sales_Model_Order_Creditmemo $creditmemo
-     * @param Mage_Sales_Model_Order_Payment $payment
-     * @return Mage_Payment_Model_Method_Abstract
-     */
-    public function processCreditmemo($creditmemo, $payment)
-    {
-        $creditmemo->setTransactionId($payment->getLastTransId());
-        return $this;
-    }
+
 
     /**
      * Refund specified amount for payment
