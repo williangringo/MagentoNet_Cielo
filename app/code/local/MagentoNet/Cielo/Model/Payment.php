@@ -97,6 +97,10 @@ class MagentoNet_Cielo_Model_Payment extends Mage_Payment_Model_Method_Cc
         return $this;
     }
 
+    public function validate() {
+        return $this;
+    }
+
 
     /**========================================================
      * Prepare info instance for save
