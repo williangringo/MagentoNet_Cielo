@@ -14,7 +14,7 @@
  * @author     MagentoNet <contato@magento.net.br>
  */
 
-class MagentoNet_Cieloo_Model_Source_Bandeiras
+class MagentoNet_Cielo_Model_Source_Bandeiras
 {
 	public function toOptionArray ()
 	{
