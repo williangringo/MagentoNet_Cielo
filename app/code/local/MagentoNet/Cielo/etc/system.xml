@@ -20,7 +20,7 @@
 	<sections>
         <payment translate="label" module="payment">
 			<groups>
-		      	<MagentoNet_Cielo translate="label">
+		      	<cielo translate="label">
                 
 					<label>Multicielo - Visa, Master, Diners, Elo, Amex e Débito</label>
 					<sort_order>1</sort_order>
@@ -266,7 +266,7 @@
 						</sort_order>
                         
 			  	     </fields>
-                </MagentoNet_Cielo>
+                </cielo>
             </groups>
 		</payment>
 	</sections>
