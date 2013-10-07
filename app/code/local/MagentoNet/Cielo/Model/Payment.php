@@ -23,7 +23,7 @@ class MagentoNet_Cielo_Model_Payment extends Mage_Payment_Model_Method_Cc
 
     //Is this payment method a gateway (online auth/charge) ?
     //=======================================================
-    protected $_isGateway               = true;
+    protected $_isGateway               = false;
 
     //Can authorize online?
     //=====================
