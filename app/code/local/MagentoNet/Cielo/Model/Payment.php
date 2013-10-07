@@ -134,7 +134,13 @@ class MagentoNet_Cielo_Model_Payment extends Mage_Payment_Model_Method_Cc
        // if (!$this->canAuthorize()) {
            // Mage::throwException(Mage::helper('payment')->__('Authorize action is not available.'));
         //}
-        Mage::throwException(Mage::helper('paygate')->__('Invalid amount for authorization.'));
+        $errorCode = 'Invalid Data';
+        $errorMsg = $this->_getHelper()->__('Error Processing the request');
+        if($errorMsg){
+            Mage::throwException($errorMsg);
+        }
+        //- See more at: http://www.excellencemagentoblog.com/magento-create-custom-payment-method-api-based#sthash.DRYuYE3O.dpuf
+        //- See more at: http://www.excellencemagentoblog.com/magento-create-custom-payment-method-api-based#sthash.DRYuYE3O.dpuf
         //var_dump($this->canRefund()); exit();
         $payment->setIsTransactionApproved(true);
         //var_dump($payment->getIsTransactionApproved()); exit();
