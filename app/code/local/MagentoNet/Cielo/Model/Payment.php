@@ -27,7 +27,7 @@ class MagentoNet_Cielo_Model_Payment extends Mage_Payment_Model_Method_Cc
 
     //Can authorize online?
     //=====================
-    protected $_canAuthorize            = true;
+    protected $_canAuthorize            = false;
 
     // Can capture funds online?
     //==========================
