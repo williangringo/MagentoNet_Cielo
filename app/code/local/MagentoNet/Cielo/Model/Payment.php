@@ -129,14 +129,14 @@ class MagentoNet_Cielo_Model_Payment extends Mage_Payment_Model_Method_Cc
     |
     | @return Mage_Payment_Model_Abstract
     =========================================*/
-  /*  public function authorize(Varien_Object $payment, $amount)
+    public function authorize(Varien_Object $payment, $amount)
     {
        // if (!$this->canAuthorize()) {
            // Mage::throwException(Mage::helper('payment')->__('Authorize action is not available.'));
         //}
         Mage::getSingleton('customer/session')->addError('You are not logged in');
 
-            Mage::throwException();
+        Mage::throwException();
 
         //- See more at: http://www.excellencemagentoblog.com/magento-create-custom-payment-method-api-based#sthash.DRYuYE3O.dpuf
         //- See more at: http://www.excellencemagentoblog.com/magento-create-custom-payment-method-api-based#sthash.DRYuYE3O.dpuf
@@ -144,7 +144,7 @@ class MagentoNet_Cielo_Model_Payment extends Mage_Payment_Model_Method_Cc
         $payment->setIsTransactionApproved(true);
         //var_dump($payment->getIsTransactionApproved()); exit();
         return $this;
-    } */
+    }
 
 
     /**
