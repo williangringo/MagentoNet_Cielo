@@ -20,6 +20,7 @@ class MagentoNet_Cielo_Block_Form extends Mage_Payment_Block_Form
     protected function _construct()
     {
         parent::_construct();
+        echo "opa";
         $this->setTemplate('MagentoNet_Cielo/form.phtml');
     }
 
