@@ -121,35 +121,26 @@ class MagentoNet_Cielo_Model_Payment extends Mage_Payment_Model_Method_Cc
 
 
 
-    /**=======================================
-    | Authorize payment abstract method
-    |
-    | @param Varien_Object $payment
-    | @param float $amount
-    |
-    | @return Mage_Payment_Model_Abstract
-    =========================================*/
-/*    public function authorize(Varien_Object $payment, $amount)
-    {
-       // if (!$this->canAuthorize()) {
-           // Mage::throwException(Mage::helper('payment')->__('Authorize action is not available.'));
-        //}
-        Mage::getSingleton('customer/session')->addError('You are not logged in');
-
-        Mage::throwException();
-
-        //- See more at: http://www.excellencemagentoblog.com/magento-create-custom-payment-method-api-based#sthash.DRYuYE3O.dpuf
-        //- See more at: http://www.excellencemagentoblog.com/magento-create-custom-payment-method-api-based#sthash.DRYuYE3O.dpuf
-        //var_dump($this->canRefund()); exit();
-        $payment->setIsTransactionApproved(true);
-        //var_dump($payment->getIsTransactionApproved()); exit();
-        return $this;
-    }
-*/
-
 
     public function getOrderPlaceRedirectUrl()
     {
+        //verifica quantos cartões foram digitados - no máximo dois(page com dois cartões)
+        foreach($cartoes as $cartao):
+            //Se pagamento for débito, faz a criação de transação para receber a url de autenticação
+            if($paymenttipe == 'debit'){
+                //guarda a url de autenticação no arrya $retornos
+
+            } elseif($paymenttipe == 'credit'){
+                //faz a autorização de crédito e guarda na array $retornos
+
+            }
+        endforeach;
+
+
+        //verifica se uma das duas autorizações foi negada e redireciona o cliente para erro, após cancelar a autorização que foi bem sucedida
+
+
+        //se tiver um retorno de url, redireciona o cliente para autenticação, caso contrário para o sucesso
 
         return 'http://www.uol.com.br';
     }
