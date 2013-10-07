@@ -54,7 +54,7 @@
 						<ambiente translate="label">
 						    <label>Ambiente</label>
 						    <frontend_type>select</frontend_type>
-						    <source_model>Multimodulos_Multicielo_Model_Source_Ambiente</source_model>
+						    <source_model>MagentoNet_Cielo_Model_Source_Ambiente</source_model>
 						    <sort_order>2</sort_order>
 						    <show_in_default>1</show_in_default>
 						    <show_in_website>1</show_in_website>
@@ -125,7 +125,7 @@
 							<label>Numero máximo de parcelas</label>
 							<frontend_type>select</frontend_type>
 							<sort_order>7</sort_order>
-                                                        <source_model>Multimodulos_Multicielo_Model_Source_NumMaxParc</source_model>
+                                                        <source_model>MagentoNet_Cielo_Model_Source_NumMaxParc</source_model>
 							<show_in_default>1</show_in_default>
 							<show_in_website>1</show_in_website>
 							<show_in_store>1</show_in_store>
@@ -144,7 +144,7 @@
 						<parcelamento_semjuros translate="label">
 						    <label>Parcelamento sem juros</label>
 						    <frontend_type>select</frontend_type>
-						    <source_model>Multimodulos_Multicielo_Model_Source_NumMaxParcSemJuros</source_model>
+						    <source_model>MagentoNet_Cielo_Model_Source_NumMaxParcSemJuros</source_model>
 						    <sort_order>9</sort_order>
 						    <show_in_default>1</show_in_default>
 						    <show_in_website>1</show_in_website>
@@ -207,7 +207,7 @@
                                                  <bandeiras translate="label">
                                                     <label>Habilitar bandeiras</label>
                                                     <frontend_type>multiselect</frontend_type>
-                                                    <source_model>Multimodulos_Multicielo_Model_Source_Bandeiras</source_model>
+                                                    <source_model>MagentoNet_Cielo_Model_Source_Bandeiras</source_model>
                                                     <sort_order>15</sort_order>
                                                     <show_in_default>1</show_in_default>
                                                     <show_in_website>1</show_in_website>
@@ -218,7 +218,7 @@
                                                 <tipoparcelamento translate="label">
                                                     <label>Tipo de parcelamento</label>
                                                     <frontend_type>select</frontend_type>
-                                                    <source_model>Multimodulos_Multicielo_Model_Source_TipoParcelamento</source_model>
+                                                    <source_model>MagentoNet_Cielo_Model_Source_TipoParcelamento</source_model>
                                                     <sort_order>15</sort_order>
                                                     <show_in_default>1</show_in_default>
                                                     <show_in_website>1</show_in_website>
